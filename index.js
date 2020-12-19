@@ -34,6 +34,11 @@ const questions = () => { return inquirer.prompt([
 	name: 'githubUsername',
 	message: "Github username: ",
 	},
+	{
+	type: 'input',
+	name: 'screenshotPath',
+	message: "Relative path to screenshot image, for image source URL: ",
+	}
 ])
 
 

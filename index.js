@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const util = require('util'); 
 const generateMarkdown = require('./utils/generateMarkdown');
 // array of questions for user
-const questions = () => { return inquirer.prompt([
+const questions = [
 //Any and all questions that have to be answered when preparing a readme file. 
 	{
 	 type: 'input',
@@ -39,10 +39,7 @@ const questions = () => { return inquirer.prompt([
 	name: 'screenshotPath',
 	message: "Relative path to screenshot image, for image source URL: ",
 	}
-])
-
-
-}; // end questions; 
+] // end questions; 
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -58,8 +55,8 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-	inquirer.prompt(questions)
-	.then(answers => {
+	inquirer.prompt(questions).then(answers => {
+	//	console.log("passed");
 		writeToFile("readme.md", generateMarkdown(answers))
 	});
 }	

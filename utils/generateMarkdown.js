@@ -1,11 +1,11 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.readmeTitleHeading}
-  Demo is viewable here: [https://${data.githubUsername}.github.io/data.${repoName}/](https://${data.githubUsername}.github.io/data.${repoName}/)
+  Demo is viewable here: [https://${data.githubUsername}.github.io/${data.repoName}/](https://${data.githubUsername}.github.io/${data.repoName}/)
  
   ${data.overviewDescription}
 
-  ![screen.jpg](${data.screenshotPath})
+  ![${data.screenshotPath}](${data.screenshotPath})
 
   ## Table of Contents
   * [Installation](#Installation)
@@ -13,7 +13,7 @@ function generateMarkdown(data) {
   * [Contributing](#Contributing)
 
   ## Installation
-  ${data.install}
+  ${data.installation}
 
   ## Usage
   ${data.usage}

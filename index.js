@@ -44,7 +44,7 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
  //add js here to write specified data to specified readme file. 
-	fs.writeToFile(fileName, data, function(err){
+	fs.writeFile(fileName, data, function(err){
 		if(err){
 			console.log(err); 
 		} else {

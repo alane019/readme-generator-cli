@@ -1,3 +1,5 @@
+const js = require("fs");
+
 const inquirer = require("inquirer");
 
 // array of questions for user
@@ -44,7 +46,7 @@ const questions = () => { return inquirer.prompt([
 function writeToFile(fileName, data) {
  //add js here to write specified data to specified readme file. 
 
- 
+
 }
 
 // function to initialize program

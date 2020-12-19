@@ -1,7 +1,6 @@
-const js = require("fs");
-
+const fs = require("fs");
 const inquirer = require("inquirer");
-
+const util = require('util'); 
 // array of questions for user
 const questions = () => { return inquirer.prompt([
 //Any and all questions that have to be answered when preparing a readme file. 

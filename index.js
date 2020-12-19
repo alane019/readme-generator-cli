@@ -33,13 +33,12 @@ const questions = [
 	type: 'input',
 	name: 'githubUsername',
 	message: "Github username: ",
-	},
-	{
+	},{
 	type: 'input',
 	name: 'screenshotPath',
 	message: "Relative path to screenshot image, for image source URL: ",
 	}
-] // end questions; 
+]; // end questions; 
 
 // function to write README file
 function writeToFile(fileName, data) {

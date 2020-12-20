@@ -1,14 +1,13 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const util = require('util'); 
 const generateMarkdown = require('./utils/generateMarkdown');
 // array of questions for user
 const questions = [
 //Any and all questions that have to be answered when preparing a readme file. 
 	{
-	 type: 'input',
-	 name: 'readmeTitleHeading',
-	 message: "Name of repository as it should appear in H1 heading at the top of readme: ",
+	type: 'input',
+	name: 'readmeTitleHeading',
+	message: "Name of repository as it should appear in H1 heading at the top of readme: ",
 	},{
 	type: 'input',
 	name: 'repoName',
@@ -55,7 +54,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
 	inquirer.prompt(questions).then(answers => {
-		writeToFile("readme.md", generateMarkdown(answers))
+		writeToFile("README.md", generateMarkdown(answers))
 	});
 }	
 

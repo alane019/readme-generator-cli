@@ -1,10 +1,10 @@
 # Readme Generator
 
-Demo is viewable here: [https://alane019.github.io/readme-generator-cli/](https://alane019.github.io/readme-generator-cli/)
+Demo is viewable here: [https://alane019.github.io/readme-generator-cli/](https://alane019.github.io/readme-generator-cli/)/](https://alane019.github.io/  readme-generator-cli/](https://alane019.github.io/readme-generator-cli/)
 
 Command-line application that dynamically generatates a professional README.md file from a user's input using the Inquirer package.
 
-![assets\images\screen.jpg](assets\images\screen.jpg)
+![assets\images\screen.jpg](https://raw.githubusercontent.com/alane019/  readme-generator-cli/](https://alane019.github.io/readme-generator-cli/)/main/assets\images\screen.jpg)
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ Command-line application that dynamically generatates a professional README.md f
 
 ## Installation
 
-Clone this repository then `npm i` in the project directory
+Clone this repository then `npm i` in the project directory.
 
 ## Usage
 

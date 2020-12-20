@@ -5,7 +5,7 @@ function generateMarkdown(data) {
  
   ${data.overviewDescription}
 
-  ![${data.screenshotPath}](${data.screenshotPath})
+  ![${data.screenshotPath}](https://raw.githubusercontent.com/${data.githubUsername}/${data.repoName}/main/${data.screenshotPath})
 
   ## Table of Contents
   * [Installation](#Installation)
